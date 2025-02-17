@@ -99,6 +99,8 @@ const Another = () => {
                 return {count : state.count -1}
             case 'increment5' :
                 return {count : state.count +5}
+            case 'decrement5' :
+                return {count : state.count -5}
             case 'nothing' :
                 return initialvalue;
             default :
