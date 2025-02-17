@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 
 const UseState = () => {
-    const [count,setCount]= useState(0)
+    const [count,setCount]= useState("");
+    const [state,setState]= useState([])
 
-    const Start = ()=>{
-        setCount ((prev)=> prev + 1)
-    }
-    const Stop = ()=>{
-        setCount ((prev)=> prev - 1)
+    const add = ()=>{
+        setState([...state,count])
     }
     
     return (
     <>
-        <h1>your count : {count}</h1>
-        <button onClick={Start}>Clicked</button>
-        <button onClick={Stop}>Reset</button>
         
+        <input type="text" value={count} onChange={(event)=> setCount(event.target.value)}/>
+        <button onClick={add}>add</button>
+        {
+            
+        }
     </>
 )
 }
