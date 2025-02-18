@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import Component2 from './Component2';
 import Component3 from './Component3';
+import Component1 from './Component1';
 
 export const userContext = createContext()
 
@@ -14,12 +15,13 @@ const UseContext = () => {
         year : 2000,
         color : "blue"
     }
+    const Name = "faizy"
     return (
         <>
-            <userContext.Provider value={{count,setCount, state , setState , arr}}>
+            <userContext.Provider value={{count,setCount, state , setState , arr,car , Name}}>
                 <Component2/>
                 <Component3/>
-                <Compo/>
+                <Component1/>
             </userContext.Provider>
         </>
 )
