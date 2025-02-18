@@ -6,8 +6,8 @@ const UseContext = () => {
     const [count,setCount]= useState(0)
     return (
         <>
-            <userContext.Provider value={{}}>
-                
+            <userContext.Provider value={{count,setCount}}>
+                <UseReducer/>
             </userContext.Provider>
         </>
 )
