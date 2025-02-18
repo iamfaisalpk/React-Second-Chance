@@ -94,13 +94,22 @@ const Another = () => {
     const reducer = (state,action)=>{
         switch(action.type){
             case 'increment' :
-                return {count : state.count +1}
+                return {...state, countOne : state.countOne + action.value}
             case 'decrement' :
-                return {count : state.count -1}
+                return {...state, countOne : state.countOne - action.value}
             case 'increment5' :
-                return {count : state.count +5}
+                return {...state, countOne : state.countOne + action.value}
             case 'decrement5' :
-                return {count : state.count -5}
+                return {...state, countOne : state.countOne - action.value}
+
+            case 'incrementc2' :
+                return {...state, countTwo : state.countTwo + action.value}
+            case 'decrementc2' :
+                return {...state, countTwo : state.countTwo - action.value}
+            case 'increment5c2' :
+                return {...state, countTwo : state.countTwo + action.value}
+            case 'decrement5c2' :
+                return {...state, countTwo : state.countTwo - action.value}
             case 'nothing' :
                 return initialvalue;
             default :
@@ -109,7 +118,8 @@ const Another = () => {
     }
 
     const initialvalue = {
-        count : 0
+        countOne : 0,
+        countTwo : 5
     };
 
     const increment = ()=>{
@@ -124,6 +134,19 @@ const Another = () => {
     const decrement5 = ()=>{
         dispatch({type : 'decrement5', value : 5})
     }
+
+    const incrementc2 = ()=>{
+        dispatch({type : 'incrementc2', value : 1})
+    } 
+    const decrementc2 = ()=>{
+        dispatch({type : 'decrementc2', value : 1})
+    }
+    const increment5c2 = ()=>{
+        dispatch({type : 'increment5c2', value : 5})
+    }
+    const decrement5c2 = ()=>{
+        dispatch({type : 'decrement5c2', value : 5})
+    }
     const reset = ()=>{
         dispatch({type : 'nothing'})
     }
@@ -133,13 +156,22 @@ const Another = () => {
     <>
         <h1>useReducer</h1>
         <div>
-            {state.count}
+            Counterone :{state.countOne} <br/>
         </div>
             <button onClick={increment}>increment</button>
             <button onClick={decrement}>decrement</button>
         <div>
             <button onClick={increment5}>increment5</button>
             <button onClick={decrement5}>decrement5</button>
+        </div>
+        <div>
+            Countertwo : {state.countTwo} <br/>
+        </div>
+        <button onClick={incrementc2}>increment</button>
+            <button onClick={decrementc2}>decrement</button>
+        <div>
+            <button onClick={increment5c2}>increment5</button>
+            <button onClick={decrement5c2}>decrement5</button>
         </div>
         <button onClick={reset}>reset</button>
     </>
