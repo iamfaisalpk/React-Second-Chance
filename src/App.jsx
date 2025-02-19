@@ -1,5 +1,5 @@
-import UseCallback from './assets/components/UseCallback';
-import UseMemo from './assets/components/UseMemo';
+import Routing from './assets/components/Router';
+import {BrowserRouter as  Router , Route} from 'react-router-dom';
 
 const App = () => {
   return (
@@ -11,7 +11,12 @@ const App = () => {
       {/* <UseContext/> */}
       {/* <UseCallback/> */}
       {/* <MyComponent/> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      <BrowserRouter>
+        <Router>
+          < Route path='/'Component={Routing} />
+        </Router>
+      </BrowserRouter>
     </>
   )
 }
