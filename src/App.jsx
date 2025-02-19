@@ -1,9 +1,5 @@
 import React from 'react'
-import UseState from './assets/components/UseState';
-import UseReducer from './assets/components/UseReducer';
-import Namec from './assets/components/UseReducer';
-import Another from './assets/components/UseReducer';
-import UseContext from './assets/components/UseContext';
+import UseClabback from './assets/components/UseCallback';
 
 const App = () => {
   return (
@@ -12,7 +8,8 @@ const App = () => {
       {/* <UseReducer/> */}
       {/* <Namec/> */}
       {/* <Another/> */}
-      <UseContext/>
+      {/* <UseContext/> */}
+      <UseClabback/>
     </>
   )
 }
