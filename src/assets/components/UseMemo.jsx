@@ -25,4 +25,4 @@ return (
 )
 }
 
-export default UseMemo
+export default UseMemo;

@@ -1,4 +1,3 @@
-import React from 'react'
 import UseCallback from './assets/components/UseCallback';
 import UseMemo from './assets/components/UseMemo';
 
@@ -11,8 +10,8 @@ const App = () => {
       {/* <Another/> */}
       {/* <UseContext/> */}
       {/* <UseCallback/> */}
-      <UseMemo/>
       {/* <MyComponent/> */}
+      <UseMemo/>
     </>
   )
 }
