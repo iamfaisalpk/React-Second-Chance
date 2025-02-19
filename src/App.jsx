@@ -1,5 +1,15 @@
+import Products from './assets/components/Products';
+import RootLayout from './assets/components/Root.Layout';
 import Routing from './assets/components/Router';
-import {BrowserRouter as  Router , Route} from 'react-router-dom';
+import {createBrowserRouter , RouterProvider} from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {path : '', element :<RootLayout/>, children:[
+    {path: '',element : <Routing/>},
+    {path: 'products',element : <Products/>},
+  ]}
+  
+])
 
 const App = () => {
   return (
@@ -12,11 +22,8 @@ const App = () => {
       {/* <UseCallback/> */}
       {/* <MyComponent/> */}
       {/* <UseMemo/> */}
-      <BrowserRouter>
-        <Router>
-          < Route path='/'Component={Routing} />
-        </Router>
-      </BrowserRouter>
+      <RouterProvider  router={router}/>
+      
     </>
   )
 }
