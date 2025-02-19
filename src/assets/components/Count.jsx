@@ -9,4 +9,4 @@ return (
 )
 }
 
-export default Count
+export default React.memo(Count);

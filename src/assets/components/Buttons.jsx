@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react"
 
-const Buttons = () => {
-    console.log()
+const Buttons = ({handleClick,childern}) => {
+    console.log(`rendering button-`, childern);
 return (
     <>
-        
+        <button onClick={handleClick}>
+            {childern}
+        </button>
     </>
 )
 }
 
-export default Buttons
+export default React.memo(Buttons);

@@ -1,5 +1,6 @@
 import React from 'react'
 import UseClabback from './assets/components/UseCallback';
+import MyComponent from './assets/components/UseCallback';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       {/* <Another/> */}
       {/* <UseContext/> */}
       <UseClabback/>
+      {/* <MyComponent/> */}
     </>
   )
 }
