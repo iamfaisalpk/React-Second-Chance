@@ -3,7 +3,7 @@ import Title from './Title'
 import Count from './Count'
 import Buttons from './Buttons'
 
-const UseClabback = () => {
+const UseCallback = () => {
     const [count,setCount]= useState(0)
     const [state,setstate] = useState (5)
 
@@ -11,7 +11,7 @@ const UseClabback = () => {
     const Plus = useCallback(()=>{
         setCount(count + 1)
     },[count]); 
-    const Plus2 = useCallback (()=>{
+    const Plus2 = use (()=>{
         setstate(state + 1)
     },[state]); 
 return (
@@ -25,7 +25,7 @@ return (
 )
 }
 
-export default React.memo(UseClabback);
+export default React.memo(UseCallback);
 
 
                             /* simple callback */ 

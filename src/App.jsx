@@ -1,6 +1,6 @@
 import React from 'react'
-import UseClabback from './assets/components/UseCallback';
-import MyComponent from './assets/components/UseCallback';
+import UseCallback from './assets/components/UseCallback';
+import UseMemo from './assets/components/UseMemo';
 
 const App = () => {
   return (
@@ -10,7 +10,8 @@ const App = () => {
       {/* <Namec/> */}
       {/* <Another/> */}
       {/* <UseContext/> */}
-      <UseClabback/>
+      {/* <UseCallback/> */}
+      <UseMemo/>
       {/* <MyComponent/> */}
     </>
   )
