@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import Title from './Title'
 import Count from './Count'
 import Buttons from './Buttons'
 
 const UseClabback = () => {
     const [count,setCount]= useState(0)
-    const [state,setstate] = useState (0)
+    const [state,setstate] = useState (5)
 
-    const Plus = ()=>{
+    
+    const Plus = useCallback(()=>{
         setCount(count + 1)
-    }
-    const Plus2 = ()=>{
+    },[count]); 
+    const Plus2 = useCallback (()=>{
         setstate(state + 1)
-    }
+    },[state]); 
 return (
     <>
         <Title/><br/>
