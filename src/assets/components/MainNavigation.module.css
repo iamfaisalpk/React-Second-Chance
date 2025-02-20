@@ -12,27 +12,21 @@
 .list {
     display: flex;
     gap: 1rem;
+    list-style: none;
 }
 
 .list a {
     text-decoration: none;
-    color: var(--color-primary-400);
+    color:rgb(124, 124, 0);
+    
 }
 
 .list a:hover,
 .list a.active {
-    color: var(--color-primary-800);
+    color: rgb(164, 164, 4);
     text-decoration: underline;
 }
 
   /* End MainNavigation.module.css */
 
 
-/* Root.module.css */
-
-content {
-    margin: 2rem auto;
-    text-align: center;
-}
-
-/* End Root.module.css */

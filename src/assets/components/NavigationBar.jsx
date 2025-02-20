@@ -1,13 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import classes from '../components/'
+import classes from './MainNavigation.module.css';
 
 const NavigationBar = () => {
 return (
     <>
         <header className={classes.header}>
             <nav>
-                <ul>
+                <ul className={classes.list}>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/products'>Product</Link></li>
                 </ul>
