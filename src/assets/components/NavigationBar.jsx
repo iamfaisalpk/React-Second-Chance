@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import classes from './MainNavigation.module.css';
+// import classes from './MainNavigation.module.css';
 
 const NavigationBar = () => {
 return (
     <>
-        <header className={classes.header}>
+        <header >
             <nav>
-                <ul className={classes.list}>
+                <ul >
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/products'>Product</Link></li>
                 </ul>

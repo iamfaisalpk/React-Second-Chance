@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 const Routing = () => {
 return (
     <>
-        <h1>Helo world</h1>
-        go to <Link to="/Products">Products</Link>Page
+        <h1>Welcome to Home page</h1>
+        
     </>
 )
 }

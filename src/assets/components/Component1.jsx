@@ -5,7 +5,7 @@ const Component1 = () => {
     const {car,Name} = useContext(userContext)
 return (
     <>
-        <h1>Objectt values: {car.name} <br/>{car.year} <br/> {car.color}</h1>
+        <h1>Object values: {car.name} <br/>{car.year} <br/> {car.color}</h1>
         <h2>name is  : {Name}</h2>
     </>
 )
