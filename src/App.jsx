@@ -1,17 +1,16 @@
-import Error from './assets/components/Error';
-import Products from './assets/components/Products';
-import Difining from './assets/components/Products,Difining';
+import {createBrowserRouter , RouterProvider} from 'react-router-dom';
 import RootLayout from './assets/components/Root.Layout';
 import Routing from './assets/components/Router';
-import {createBrowserRouter , RouterProvider} from 'react-router-dom';
+import Products from './assets/components/Products';
+import Difining from './assets/components/Products,Difining';
 
-const router = createBrowserRouter([
-  {path : '', element :<RootLayout/>, errorElement: <Error/>, children:[
-    {path: '',element : <Routing/>},
-    {path: 'products',element : <Products/>},
-    {path: 'products/:productid' , element : <Difining/>},
+
+const router =  createBrowserRouter ([
+  {path : '', element : <RootLayout/> , children :[
+    {path : '', element : <Routing/>},
+    {path : '/products', element : <Products/>},
+    {path : '/products/:productid', element : <Difining/>},
   ]}
-  
 ])
 
 const App = () => {
