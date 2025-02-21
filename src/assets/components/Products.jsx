@@ -10,6 +10,7 @@ const Products = ()=>{
 
     return(
         <>
+            <h1>Welcome to Product page</h1>
             <ul>
                 {Products .map((prod)=>{
                     return <li key={prod.id}>{prod.product}
