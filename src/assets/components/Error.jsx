@@ -6,8 +6,8 @@ return (
     <>
     <NavigationBar/>
         <main>
-            <h1>Please pass me review</h1>
-            <p>Please doo</p>
+            <h1>your responde not available</h1>
+            <p>Try again later</p>
         </main>
     </>
 )
