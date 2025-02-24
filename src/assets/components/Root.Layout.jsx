@@ -13,4 +13,3 @@ return (
 }
 
 export default RootLayout;
-
