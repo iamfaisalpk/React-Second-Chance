@@ -22,7 +22,7 @@ const App = () => {
       {/* <UseContext/> */}
       {/* <UseCallback/> */}
       {/* <MyComponent/> */}
-      {/* <UseMemo/> */}
+      <UseMemo/>
       <RouterProvider  router={router}/>
       
     </>
